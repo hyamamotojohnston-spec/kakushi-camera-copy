@@ -10,9 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   
   <style>
+    /* ヒーロー画像を「監視・防犯」をイメージさせるダークトーンの画像に変更 */
     .hero-bg {
-      background: linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.93)), 
-                  url('https://picsum.photos/id/1074/1920/1080') center/cover no-repeat fixed;
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), 
+                  url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat fixed;
     }
     .case-image {
       height: 260px;
@@ -28,7 +29,6 @@
 </head>
 <body class="bg-zinc-950 text-white font-sans">
 
-  <!-- ヘッダー -->
   <header class="fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-xl z-50 border-b border-red-900/30">
     <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
       <div class="flex items-center gap-4">
@@ -62,7 +62,6 @@
     </div>
   </header>
 
-  <!-- ヒーロー（監視カメラが写ったプロ仕様の背景） -->
   <section class="hero-bg h-screen flex items-center pt-16">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h1 class="text-5xl sm:text-6xl md:text-7xl font-black leading-none mb-6 drop-shadow-2xl">
@@ -77,7 +76,6 @@
     </div>
   </section>
 
-  <!-- 設置事例（各事例に合った本物のカメラ設置画像に変更） -->
   <section id="cases" class="py-20 bg-zinc-900">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-5xl font-bold text-center mb-4">隠しカメラ 設置事例</h2>
@@ -85,54 +83,50 @@
 
       <div class="grid md:grid-cols-2 gap-8">
 
-        <!-- 事例1: レジ不正対策 -->
         <div class="bg-zinc-800 rounded-3xl overflow-hidden case-card animate-on-scroll">
-          <img src="https://picsum.photos/id/1015/800/600" 
-               alt="レジ不正対策 ボタン型隠しカメラ設置事例" 
+          <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800" 
+               alt="レジ不正対策 レジ周辺に設置したボタン型隠しカメラ" 
                class="case-image w-full">
           <div class="p-8">
             <span class="inline-block bg-red-600 text-white text-xs px-4 py-1 rounded-full mb-4">店舗・レジ対策</span>
             <h3 class="text-2xl font-bold mb-3">レジ不正の犯人を即特定</h3>
-            <p class="text-zinc-400 mb-6">レジ上にボタン型隠しカメラを設置。着服の瞬間を4K録画で捉え、即解決。</p>
+            <p class="text-zinc-400 mb-6">レジ上にボタン型隠しカメラを設置。着服の瞬間を高画質で録画し、即解決。</p>
             <div class="text-sm text-red-400">使用カメラ：ボタン型WiFiカメラ</div>
           </div>
         </div>
 
-        <!-- 事例2: 社内パワハラ対策 -->
         <div class="bg-zinc-800 rounded-3xl overflow-hidden case-card animate-on-scroll">
-          <img src="https://picsum.photos/id/201/800/600" 
-               alt="社内パワハラ対策 時計型カメラ設置事例" 
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" 
+               alt="社内対策 天井と壁に設置した時計型隠しカメラ" 
                class="case-image w-full">
           <div class="p-8">
             <span class="inline-block bg-red-600 text-white text-xs px-4 py-1 rounded-full mb-4">企業・社内対策</span>
             <h3 class="text-2xl font-bold mb-3">社内パワハラと金庫室不正</h3>
-            <p class="text-zinc-400 mb-6">時計型カメラを天井に完全隠密設置。犯人を特定し、損害賠償回収に成功。</p>
+            <p class="text-zinc-400 mb-6">天井と壁に時計型カメラを完全隠密設置。犯人を特定し解決。</p>
             <div class="text-sm text-red-400">使用カメラ：時計型スパイカメラ</div>
           </div>
         </div>
 
-        <!-- 事例3: ストーカー・DV対策 -->
         <div class="bg-zinc-800 rounded-3xl overflow-hidden case-card animate-on-scroll">
-          <img src="https://picsum.photos/id/1018/800/600" 
-               alt="ストーカー対策 ピンホールカメラ設置事例" 
+          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800" 
+               alt="ストーカー対策 玄関や室内に隠し設置したピンホールカメラ" 
                class="case-image w-full">
           <div class="p-8">
             <span class="inline-block bg-red-600 text-white text-xs px-4 py-1 rounded-full mb-4">個人宅・ストーカー対策</span>
             <h3 class="text-2xl font-bold mb-3">ストーカー・DV被害の解決</h3>
-            <p class="text-zinc-400 mb-6">玄関とリビングに超小型ピンホールカメラを設置。不審者の行動を録画し解決。</p>
+            <p class="text-zinc-400 mb-6">玄関とリビングに超小型カメラを隠し設置。不審者の行動を録画し解決。</p>
             <div class="text-sm text-red-400">使用カメラ：USB型＋ピンホールカメラ</div>
           </div>
         </div>
 
-        <!-- 事例4: 万引き・店舗対策 -->
         <div class="bg-zinc-800 rounded-3xl overflow-hidden case-card animate-on-scroll">
-          <img src="https://picsum.photos/id/133/800/600" 
-               alt="万引き対策 店舗内隠しカメラ設置事例" 
+          <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=800" 
+               alt="万引き対策 店内全体を監視する隠しカメラ設置事例" 
                class="case-image w-full">
           <div class="p-8">
             <span class="inline-block bg-red-600 text-white text-xs px-4 py-1 rounded-full mb-4">店舗・万引き対策</span>
             <h3 class="text-2xl font-bold mb-3">万引き・従業員の不正</h3>
-            <p class="text-zinc-400 mb-6">店内複数箇所に小型カメラを設置。共謀を捉え即解決。</p>
+            <p class="text-zinc-400 mb-6">店内全体をカバーする小型カメラを複数設置。共謀を捉え即解決。</p>
             <div class="text-sm text-red-400">使用カメラ：ボタン型＋WiFi遠隔カメラ</div>
           </div>
         </div>
@@ -141,7 +135,6 @@
     </div>
   </section>
 
-  <!-- お問い合わせ -->
   <section id="contact" class="py-20 bg-zinc-900">
     <div class="max-w-2xl mx-auto px-6">
       <h2 class="text-5xl font-bold text-center mb-12">見積もり依頼・無料相談</h2>
@@ -161,7 +154,6 @@
     </div>
   </section>
 
-  <!-- フッター -->
   <footer class="bg-black py-12 text-xs">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <p class="font-bold">隠しカメラ防犯対策コピー（株式会社コピー）</p>
