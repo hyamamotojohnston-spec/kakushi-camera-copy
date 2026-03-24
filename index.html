@@ -4,20 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>隠しカメラ 大阪 | 隠しカメラ防犯対策コピー | 証拠撮り専門（東三国本社）</title>
-  <meta name="description" content="大阪・東三国発の隠しカメラ防犯対策専門店。レジ不正・ストーカー・DV・パワハラ対策の設置事例多数。">
+  <meta name="description" content="大阪・東三国発の隠しカメラ防犯対策専門店。レジ不正・ストーカー・DV対策の設置事例多数。">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   
   <style>
-    /* ★ 具体的な監視カメラが写った防犯イメージの背景に変更 */
+    /* ★ 微調整した防犯カメラ背景（よりリアルで具体的な監視カメラ画像） */
     .hero-bg {
-      background: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.85)), 
+      background: linear-gradient(rgba(0,0,0,0.87), rgba(0,0,0,0.92)), 
                   url('https://picsum.photos/id/1074/1920/1080') center/cover no-repeat fixed;
-      /* より本格的な監視カメラ画像を使いたい場合は以下を推奨（Grok Imagine生成イメージ風） */
-      /* url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64')  ← 複数の監視カメラが並ぶコントロールルーム */
     }
-    
+
+    /* ★ 商品アイコンをより本格的な防犯カメラ風に微調整 */
+    .camera-icon {
+      font-size: 5.5rem;
+      color: #ef4444;
+      filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.7));
+      transition: transform 0.4s ease;
+    }
+    .product-card:hover .camera-icon {
+      transform: scale(1.12) rotate(8deg);
+    }
+
     .case-card { transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
     .case-card:hover { transform: translateY(-15px); box-shadow: 0 25px 50px -12px rgba(239, 68, 68, 0.3); }
     .animate-on-scroll { opacity: 0; transform: translateY(60px); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
@@ -42,7 +51,6 @@
       <nav class="hidden md:flex gap-8 text-sm font-medium">
         <a href="#products" class="hover:text-red-400">商品一覧</a>
         <a href="#cases" class="hover:text-red-400">設置事例</a>
-        <a href="#scenes" class="hover:text-red-400">利用シーン</a>
         <a href="#contact" class="hover:text-red-400">お問い合わせ</a>
       </nav>
 
@@ -56,16 +64,15 @@
     <div id="mobile-menu" class="hidden md:hidden bg-black/95 backdrop-blur-xl px-5 py-6">
       <a href="#products" class="block py-4 text-lg border-b border-zinc-800">商品一覧</a>
       <a href="#cases" class="block py-4 text-lg border-b border-zinc-800">設置事例</a>
-      <a href="#scenes" class="block py-4 text-lg border-b border-zinc-800">利用シーン</a>
       <a href="#contact" class="block py-4 text-lg">お問い合わせ</a>
       <a href="tel:06-6753-7467" class="mt-6 block text-center bg-red-600 py-5 rounded-2xl font-bold">📞 06-6753-7467で相談</a>
     </div>
   </header>
 
-  <!-- ヒーロー（具体的な監視カメラが写った防犯イメージ背景） -->
+  <!-- ヒーロー（監視カメラが明確に写った背景） -->
   <section class="hero-bg h-screen flex items-center pt-16">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <h1 class="text-5xl sm:text-6xl md:text-7xl font-black leading-none mb-6 text-white drop-shadow-2xl">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-black leading-none mb-6 drop-shadow-2xl">
         隠しカメラ 大阪<br>証拠撮り専門の隠しカメラ防犯対策コピー
       </h1>
       <p class="text-xl sm:text-2xl text-zinc-100 mb-10 drop-shadow-md">
@@ -77,7 +84,49 @@
     </div>
   </section>
 
-  <!-- 設置事例（そのまま維持） -->
+  <!-- 商品ラインナップ（アイコンをよりリアルでかっこよく微調整） -->
+  <section id="products" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16">隠しカメラ商品ラインナップ</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        
+        <div class="bg-zinc-900 rounded-3xl overflow-hidden case-card text-center product-card">
+          <div class="h-72 bg-zinc-800 flex items-center justify-center">
+            <i class="fas fa-video camera-icon"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="font-bold text-2xl">ボタン型隠しカメラ</h3>
+            <p class="text-red-500 font-mono">¥19,800〜</p>
+            <p class="text-zinc-400 mt-4">シャツのボタンに完全偽装。4K録画・WiFi対応</p>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 rounded-3xl overflow-hidden case-card text-center product-card">
+          <div class="h-72 bg-zinc-800 flex items-center justify-center">
+            <i class="fas fa-clock camera-icon"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="font-bold text-2xl">時計型スパイカメラ</h3>
+            <p class="text-red-500 font-mono">¥24,800〜</p>
+            <p class="text-zinc-400 mt-4">置くだけで自動録画開始。クラウド保存対応</p>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 rounded-3xl overflow-hidden case-card text-center product-card">
+          <div class="h-72 bg-zinc-800 flex items-center justify-center">
+            <i class="fas fa-plug camera-icon"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="font-bold text-2xl">USB充電器型カメラ</h3>
+            <p class="text-red-500 font-mono">¥16,800〜</p>
+            <p class="text-zinc-400 mt-4">コンセントに挿すだけ。24時間連続監視</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 設置事例 -->
   <section id="cases" class="py-20 bg-zinc-900">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-5xl font-bold text-center mb-4">隠しカメラ 設置事例</h2>
